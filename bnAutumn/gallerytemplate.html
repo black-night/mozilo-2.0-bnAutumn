@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta name="keywords" content="{WEBSITE_KEYWORDS}" />
+		<meta name="description" content="{WEBSITE_DESCRIPTION}" />
+		<title>{WEBSITE_TITLE}</title>
+		<script type="text/javascript"><!--
+			function setSearchFocus() {
+				if (document.search) {
+  				document.search.query.focus();
+  				document.search.query.select();
+  			}
+			}
+		--></script>
+        <style type="text/css"> @import "{LAYOUT_DIR}/css/style.css"; </style>
+        <style type="text/css"> @import "{LAYOUT_DIR}/css/style_mobile.css"; </style>        
+		<meta http-equiv="Content-Type" content="text/html; charset={CHARSET}" />
+	</head>
+
+	<body id="a0">
+		<div id="container">
+			<div id="banner">      
+				<!-- Grafik kann z.B. als Link zur Startseite genutzt werden -->
+				<!-- <a href="http://meineseite.de> -->
+        <h1>{WEBSITE_NAME}</h1>        
+        <div id="search">
+          {SEARCH}
+        </div>        
+        <div id="clear"></div>
+				<img src="{LAYOUT_DIR}/grafiken/logo.png" alt="{WEBSITE_TITLE}" />
+				<!-- </a> -->
+			</div>
+			
+			<div id="containerclient">
+
+
+		    <div id="sidebar-a">
+
+		  		<div id="rightmenu">
+		  			{MAINMENU}
+    			</div>
+
+			  </div>
+
+
+
+			  <div id="content">
+					{Galerie|{CURRENTGALLERY} }
+				</div>
+			</div>
+
+      <div id="footersearch">
+        {SEARCH}
+      </div>  
+			<div id="footer">
+			  <div class="footertext">
+			  	| {CMSINFO} | {SITEMAPLINK} | {LASTCHANGE} | Design: <a href="http://www.black-night.org" target="_blank">blacknight</a> |
+			  </div>
+			</div>
+			
+			
+		</div>
+	</body>
+</html>
